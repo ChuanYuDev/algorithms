@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.MinimumMovesToMakeArrayComplementary.MinimumMovesToMakeArrayComplementary</StartupObject>
+        <StartupObject>Leetcode.MaximumNumberOfJumpsToReachTheLastIndex.MaximumNumberOfJumpsToReachTheLastIndex</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>

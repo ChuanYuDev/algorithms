@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Test.Operators.Sort.Sort</StartupObject>
+        <StartupObject>Test.Types.UnsignedInt</StartupObject>
         <RootNamespace>Test</RootNamespace>
     </PropertyGroup>
 
