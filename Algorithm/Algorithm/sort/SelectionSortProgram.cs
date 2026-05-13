@@ -3,7 +3,7 @@ namespace Algorithm.sort;
 public class SelectionSortProgram
 {
     private static void SelectionSort<T>(List<T> list)
-        where T: IComparable
+        where T: IComparable<T>
     {
         for (var i = 0; i < list.Count; i++)
         {

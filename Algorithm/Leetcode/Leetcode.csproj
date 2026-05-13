@@ -5,7 +5,11 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.SeparateTheDigitsInAnArray.SeparateTheDigitsInAnArray</StartupObject>
+        <StartupObject>Leetcode.MinimumInitialEnergyToFinishTasks.MinimumInitialEnergyToFinishTasks</StartupObject>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Helper\Helper.csproj" />
+    </ItemGroup>
 
 </Project>
