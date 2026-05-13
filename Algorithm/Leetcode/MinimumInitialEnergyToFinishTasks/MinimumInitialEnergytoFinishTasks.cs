@@ -6,8 +6,8 @@ namespace Leetcode.MinimumInitialEnergyToFinishTasks;
 //      For example, if the task is [10, 12] and your current energy is 11, you cannot start this task. However, if your current energy is 13, you can complete this task, and your energy will be 3 after finishing it.
 //
 //  Constraints:
-//      1 <= tasks.length <= 105
-//      1 <= actuali <= minimumi <= 104
+//      1 <= tasks.length <= 10^5
+//      1 <= actuali <= minimumi <= 10^4
 
 //  You can finish the tasks in any order you like.
 //  Return the minimum initial amount of energy you will need to finish all the tasks.
