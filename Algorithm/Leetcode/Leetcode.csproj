@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.MaximumNumberOfJumpsToReachTheLastIndex.MaximumNumberOfJumpsToReachTheLastIndex</StartupObject>
+        <StartupObject>Leetcode.FizzBuzzMultithreaded.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>

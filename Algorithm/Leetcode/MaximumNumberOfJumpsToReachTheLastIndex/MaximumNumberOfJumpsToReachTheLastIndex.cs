@@ -1,6 +1,5 @@
 namespace Leetcode.MaximumNumberOfJumpsToReachTheLastIndex;
 
-
 //  You are given a 0-indexed array nums of n integers and an integer target.
 //
 //  You are initially positioned at index 0. In one step, you can jump from index i to any index j such that:

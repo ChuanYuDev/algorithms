@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Test.Types.UnsignedInt</StartupObject>
+        <StartupObject>Test.Concurrency.CancellationTokenTest.CancellationTokenRegister</StartupObject>
         <RootNamespace>Test</RootNamespace>
     </PropertyGroup>
 
