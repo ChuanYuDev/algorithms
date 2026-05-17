@@ -74,7 +74,7 @@ public class Solution
     }
 }
 
-public class MaximumNumberOfJumpsToReachTheLastIndex
+public class MainProgram
 {
     static void Main()
     {

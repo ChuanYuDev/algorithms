@@ -29,7 +29,7 @@ public class Solution
     }
 }
 
-public class SeparateTheDigitsInAnArray
+public class MainProgram
 {
     static void Main()
     {

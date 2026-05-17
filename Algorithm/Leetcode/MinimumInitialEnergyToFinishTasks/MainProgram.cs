@@ -1,5 +1,7 @@
 namespace Leetcode.MinimumInitialEnergyToFinishTasks;
 
+//  Minimum Initial Energy to Finish Tasks
+//  Hard
 //  You are given an array tasks where tasks[i] = [actuali, minimumi]:
 //      actuali is the actual amount of energy you spend to finish the ith task.
 //      minimumi is the minimum amount of energy you require to begin the ith task.
@@ -111,7 +113,7 @@ public class Solution
     }
 }
 
-public class MinimumInitialEnergyToFinishTasks
+public class MainProgram
 {
     static void Main()
     {

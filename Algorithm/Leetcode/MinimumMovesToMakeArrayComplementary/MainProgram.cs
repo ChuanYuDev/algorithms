@@ -1,5 +1,7 @@
 namespace Leetcode.MinimumMovesToMakeArrayComplementary;
 
+//  Minimum Moves to Make Array Complementary
+//  Medium
 //  You are given an integer array nums of even length n and an integer limit.
 //  In one move, you can replace any integer from nums with another integer between 1 and limit, inclusive.
 
@@ -114,7 +116,7 @@ public class Solution
     }
 }
 
-public class MinimumMovesToMakeArrayComplementary
+public class MainProgram
 {
     static void Main()
     {

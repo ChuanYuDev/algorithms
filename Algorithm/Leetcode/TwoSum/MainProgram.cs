@@ -30,7 +30,7 @@ public class Solution
     }
 }
 
-public class TwoSum
+public class MainProgram
 {
     static void Main()
     {
