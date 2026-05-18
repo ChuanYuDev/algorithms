@@ -31,21 +31,87 @@ namespace Leetcode.FindMinimumInRotatedSortedArrayII;
 
 //  [2,2,2,0,1]
 //  [2,2,0,1,2]
+//  [2,3,3,0,2,2]
 
 //  i<j
-//  if nums[i] < nums[j], mid -> [0, i] or [j+1, n-1]
-//  if nums[i] > nums[j], mid -> [i+1, j]
-//  if nums[i] == nums[j]??
+//  if nums[i] < nums[j], min -> [0, i] or [j+1, n-1]
+//  if nums[i] > nums[j], min -> [i+1, j]
+//  if nums[i] == nums[j]
+//      i' = i+1
+//      if nums[i] > nums[i'] < nums[j], min = nums[i+1]
+//      if nums[i] < nums[i'] > nums[j], min -> ([0, i] or [i'+1, n-1]) and [i'+1, j], min -> [i'+1, j]
+//      if nums[i'] == nums[j], min -> [0,i] or [j+1, n-1] 
+//
+//      j' = j-1
+//      if nums[i] > nums[j'] < nums[j], min -> [i+1, j-1] and ([0,j'] or [j+1, n-1]), min -> [i+1, j-1]
+//      if nums[i] < nums[j'] > nums[j], min = nums[j]
+//      if nums[i] == nums[j'] == nums[j], min -> [0,i] or [j+1, n-1]
+
+//  first=0, last=n-1
+//  i=(first+last)/2, j=last
+//  if i == j return nums[first]
+//  else
+//  if nums[i] < nums[j]
+//      min -> [0,i]
+//      last=i
+//  if nums[i] > nums[j], min -> [i+1, j]
+//      first = i+1
+//      last = j
+//  if nums[i] == nums[j]
+//      j--
+//      if nums[i] > nums[j], min -> [i+1, j-1]
+//          first=i+1
+//          last=j-1
+//      if nums[i] < nums[j], min = nums[i]
+//      if nums[i] == nums[j]
+//          j-- until i == j, last=i
+//      
+//      3 cases -> last=last-1
 
 public class Solution 
 {
-    public int FindMin(int[] nums) 
+    public int FindMin(int[] nums)
     {
-        
+        var length = nums.Length;
+        int first = 0, last = length - 1;
+        while (first <= last)
+        {
+            var i = (first + last) / 2;
+            var j = last;
+
+            if (i == j) return nums[first];
+
+            if (nums[i] < nums[j])
+            {
+                last = i;
+            }
+            else if (nums[i] > nums[j])
+            {
+                first = i + 1;
+                last = j;
+            }
+            else
+            {
+                last = j - 1;
+            }
+        }
+
+        return -5001;
     }
 }
 
 public class MainProgram
 {
-    
+    static void Main()
+    {
+        Solution sol = new Solution();
+
+        int[] nums = [1, 3, 5];
+        Console.WriteLine(sol.FindMin(nums));
+        //  Output: 1
+
+        nums = [2, 2, 2, 0, 1];
+        Console.WriteLine(sol.FindMin(nums));
+        //  Output: 0
+    }
 }
