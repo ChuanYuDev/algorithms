@@ -79,7 +79,7 @@ public class FizzBuzz2
             }
             
         }
-        catch(OperationCanceledException e)
+        catch(OperationCanceledException)
         {}
     }
 }
