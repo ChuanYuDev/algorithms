@@ -68,6 +68,10 @@ namespace Leetcode.FindMinimumInRotatedSortedArrayII;
 //      
 //      3 cases -> last=last-1
 
+//  first   last    i
+//  0       0       0
+//  0       1       0
+
 public class Solution 
 {
     public int FindMin(int[] nums)
