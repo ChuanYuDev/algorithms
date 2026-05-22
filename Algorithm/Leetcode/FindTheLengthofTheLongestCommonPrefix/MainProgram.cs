@@ -1,3 +1,5 @@
+using Helper;
+
 namespace Leetcode.FindTheLengthofTheLongestCommonPrefix;
 //  Find the Length of the Longest Common Prefix
 //  Medium
@@ -24,20 +26,29 @@ namespace Leetcode.FindTheLengthofTheLongestCommonPrefix;
 //  Output: 0
 //  Note that common prefixes between elements of the same array do not count.
 //  
-//
 //  Constraints:
 //      1 <= arr1.length, arr2.length <= 5 * 10^4
 //      1 <= arr1[i], arr2[i] <= 10^8
 
-public class Solution
-{
-    public int LongestCommonPrefix(int[] arr1, int[] arr2)
-    {
-        return 0;
-    }
-}
 
 public class MainProgram
 {
-    
+    static void Main()
+    {
+        var sol = new Solution2();
+
+        int[] arr1 = [1, 10, 100], arr2 = [1000];
+        Console.WriteLine(sol.LongestCommonPrefix(arr1, arr2));
+        //  Output: 3
+
+        arr1 = [1, 2, 3];
+        arr2 = [4, 4, 4];
+        Console.WriteLine(sol.LongestCommonPrefix(arr1, arr2));
+        //  Output: 0
+
+        arr1 = [1, 3];
+        arr2 = [32, 22];
+        Console.WriteLine(sol.LongestCommonPrefix(arr1, arr2));
+        //  Output: 1
+    }
 }
