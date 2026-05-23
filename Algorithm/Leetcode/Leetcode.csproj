@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.SearchInRotatedSortedArraySolved.MainProgram</StartupObject>
+        <StartupObject>Leetcode.CheckIfArrayIsSortedAndRotated.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
