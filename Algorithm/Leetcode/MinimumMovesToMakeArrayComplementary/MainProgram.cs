@@ -30,7 +30,7 @@ namespace Leetcode.MinimumMovesToMakeArrayComplementary;
 
 //  Moves per group: 0 1 2
 
-//  4 numbers, A, B, A -> B or B -> A, moves are not the same??
+//  4 numbers, A, B, A -> B or B -> A, moves are not the same
 //      7 5 5 8 | 9
 //      7 9 6 8 -> 2 moves
 //      2 5 5 8 -> 1 move
