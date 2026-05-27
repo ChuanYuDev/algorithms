@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.CountTheNumberOfSpecialCharactersI.MainProgram</StartupObject>
+        <StartupObject>Leetcode.CountTheNumberOfSpecialCharactersII.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>

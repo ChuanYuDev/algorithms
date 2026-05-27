@@ -1,9 +1,12 @@
 namespace Leetcode.FindThePrefixCommonArrayOfTwoArrays;
 
-// Because we just check the presence of the element in aMap and bMap
-// So we can change the data structure from Dictionary to HashSet with preset capacity
+//  Because we just check the presence of the element in aMap and bMap
+//      So we can change the data structure from Dictionary to HashSet with preset capacity
 
-// But the HashSet is slower than Dictionary implementation in Leetcode (10ms vs. 5ms), why??
+//  But the HashSet is slower than Dictionary implementation in Leetcode (10ms vs. 5ms), why??
+//      Test in CountTheNumberOfSpecialCharactersII, there is no big different between HastSet and Dictionary
+//      Therefore 10 vs 5 may be just time errors 
+
 public class Solution2
 {
     public int[] FindThePrefixCommonArray(int[] a, int[] b)
