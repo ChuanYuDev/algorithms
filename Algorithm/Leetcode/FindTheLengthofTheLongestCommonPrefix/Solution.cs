@@ -52,9 +52,9 @@ namespace Leetcode.FindTheLengthofTheLongestCommonPrefix;
 //  Complexity:
 //      arr1.length n
 //      arr2.length m
-//      element with most digits l
-//      tree: (n + m)log(l)
-//      brute-force: (nm)log(l)
+//      most digits d
+//      tree: (n + m)d
+//      brute-force: (nm)d
 
 public class Solution
 {

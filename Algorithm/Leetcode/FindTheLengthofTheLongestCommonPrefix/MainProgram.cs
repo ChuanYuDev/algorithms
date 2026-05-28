@@ -30,12 +30,11 @@ namespace Leetcode.FindTheLengthofTheLongestCommonPrefix;
 //      1 <= arr1.length, arr2.length <= 5 * 10^4
 //      1 <= arr1[i], arr2[i] <= 10^8
 
-
 public class MainProgram
 {
     static void Main()
     {
-        var sol = new Solution2();
+        var sol = new Solution3();
 
         int[] arr1 = [1, 10, 100], arr2 = [1000];
         Console.WriteLine(sol.LongestCommonPrefix(arr1, arr2));
