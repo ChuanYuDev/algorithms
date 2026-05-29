@@ -26,19 +26,30 @@ namespace Leetcode.JumpGameIV;
 //  Constraints:
 //      1 <= arr.length <= 5 * 10^4
 //     -10^8 <= arr[i] <= 10^8
-//
-//  BFS
-//  
-
-public class Solution
-{
-    public int MinJumps(int[] arr)
-    {
-        return 0;
-    }
-}
 
 public class MainProgram
 {
-    
+    static void Main()
+    {
+        var sol = new Solution2();
+        int[] arr = [100, -23, -23, 404, 100, 23, 23, 23, 3, 404];
+        Console.WriteLine(sol.MinJumps(arr));
+        //  Output: 3
+
+        arr = [7];
+        Console.WriteLine(sol.MinJumps(arr));
+        //  Output: 0
+
+        arr = [7, 6, 9, 6, 9, 6, 9, 7];
+        Console.WriteLine(sol.MinJumps(arr));
+        //  Output: 1
+
+        arr = [7, 7, 2, 1, 7, 7, 7, 3, 4, 1];
+        Console.WriteLine(sol.MinJumps(arr));
+        //  Output: 3
+
+        arr = [6, 1, 2, 3, 4, 1, 2, 3, 4, 7, 11];
+        Console.WriteLine(sol.MinJumps(arr));
+        //  Output: 6
+    }
 }

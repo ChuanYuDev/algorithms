@@ -11,7 +11,7 @@ public class ThreadWorker
         {
             s.Wait(ct);
         }
-        catch (OperationCanceledException e)
+        catch (OperationCanceledException)
         {
             Console.WriteLine("Operation is canceled");
         }

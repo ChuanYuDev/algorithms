@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Test.Types.String.Foreach</StartupObject>
+        <StartupObject>Test.Types.Queue</StartupObject>
         <RootNamespace>Test</RootNamespace>
     </PropertyGroup>
 
