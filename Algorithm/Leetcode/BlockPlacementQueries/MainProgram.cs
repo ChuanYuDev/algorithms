@@ -39,7 +39,7 @@ public class MainProgram
 {
     static void Main()
     {
-        Solution sol = new Solution();
+        var sol = new Solution2();
         int[][] queries = [[1, 2], [2, 3, 3], [2, 3, 1], [2, 2, 2]];
         PrintHelper.PrintEnumerable(sol.GetResults(queries));
         //  Output: [false,true,true]

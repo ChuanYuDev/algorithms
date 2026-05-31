@@ -64,6 +64,7 @@ namespace Leetcode.BlockPlacementQueries;
 //  List<T> sorted = new List<T>();
 //  
 //  int FindIdx(x)
+//      // O(logn)
 //      // For x from query 1, x != sorted[i]
 //      // For x from query 2, x may equal to sorted[i]
 //      if x <= sorted[0] valueIdx = 0
@@ -81,6 +82,7 @@ namespace Leetcode.BlockPlacementQueries;
 //      if (value < mid) last = mid
 //
 //  Insert(x)
+//      // O(n)
 //      idx = FindIdx(x)
 //      sorted.Insert(idx, x)
 //      if (idx == 0) max.Insert(idx, x)
@@ -94,12 +96,14 @@ namespace Leetcode.BlockPlacementQueries;
 //          max[i] = maxI
 //
 //  int GetLargestGap(int x)
+//      // O(logn)
 //      idx = FindIdx(x)
 //      if (idx == 0) return x
 //      return Max(max[idx - 1], x - sorted[idx - 1])
 //
 //  Solution
 //  IList<bool> GetResults(int[][] queries)
+//      // O(n^2)
 //      List<bool> results
 //      for i from 0 to queries.Length
 //          if (queries[i][0] == 1) sortedBlocks.Insert(queries[i][1])
