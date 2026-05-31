@@ -46,12 +46,12 @@ public class MainProgram
         var sol = new Solution2();
 
         int[] a = [1, 3, 2, 4], b = [3, 1, 2, 4];
-        PrintHelper.PrintArray(sol.FindThePrefixCommonArray(a, b));
+        PrintHelper.PrintEnumerable(sol.FindThePrefixCommonArray(a, b));
         //  Output: [0,2,3,4]
 
         a = [2, 3, 1];
         b = [3, 1, 2];
-        PrintHelper.PrintArray(sol.FindThePrefixCommonArray(a, b));
+        PrintHelper.PrintEnumerable(sol.FindThePrefixCommonArray(a, b));
         //  Output: [0,1,3]
     }
     

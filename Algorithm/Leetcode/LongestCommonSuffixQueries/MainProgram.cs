@@ -35,17 +35,17 @@ public class MainProgram
     {
         var sol = new Solution2();
         string[] wordsContainer = ["abcd", "bcd", "xbcd"], wordsQuery = ["cd", "bcd", "xyz"];
-        PrintHelper.PrintArray(sol.StringIndices(wordsContainer, wordsQuery));
+        PrintHelper.PrintEnumerable(sol.StringIndices(wordsContainer, wordsQuery));
         //  Output: [1,1,1]
 
         wordsContainer = ["abcdefgh", "poiuygh", "ghghgh"];
         wordsQuery = ["gh", "acbfgh", "acbfegh"];
-        PrintHelper.PrintArray(sol.StringIndices(wordsContainer, wordsQuery));
+        PrintHelper.PrintEnumerable(sol.StringIndices(wordsContainer, wordsQuery));
         //  Output: [2,0,2]
 
         wordsContainer = ["abcde", "abcde"];
         wordsQuery = ["abcde", "bcde", "cde", "de", "e"];
-        PrintHelper.PrintArray(sol.StringIndices(wordsContainer, wordsQuery));
+        PrintHelper.PrintEnumerable(sol.StringIndices(wordsContainer, wordsQuery));
         //  Output: [0,0,0,0,0]
     }
 }

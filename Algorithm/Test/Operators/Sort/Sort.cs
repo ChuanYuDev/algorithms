@@ -39,6 +39,6 @@ public class Sort
         int[] array3 = [32, 200, 3];
         Array.Sort(array3);
         
-        PrintHelper.PrintArray(array3);
+        PrintHelper.PrintEnumerable(array3);
     }
 }

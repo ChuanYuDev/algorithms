@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.JumpGameIV.MainProgram</StartupObject>
+        <StartupObject>Leetcode.BlockPlacementQueries.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>

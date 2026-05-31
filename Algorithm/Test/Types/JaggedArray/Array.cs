@@ -1,4 +1,4 @@
-namespace Test.Types;
+namespace Test.Types.JaggedArray;
 
 public class Array
 {
@@ -9,5 +9,6 @@ public class Array
        
         // Console.WriteLine($"{array.GetLength(0)}, {array.GetLength(1)}");
         Console.WriteLine($"{array.GetLength(0)}");
+        Console.WriteLine(array.Length);
     }
 }

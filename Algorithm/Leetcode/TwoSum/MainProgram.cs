@@ -38,19 +38,19 @@ public class MainProgram
         int[] nums = [2, 7, 11, 15];
         var target = 9;
         
-        PrintHelper.PrintArray(sol.TwoSum(nums, target));
+        PrintHelper.PrintEnumerable(sol.TwoSum(nums, target));
         // Output: [0,1]
         
         nums = [3,2,4];
         target = 6;
         
-        PrintHelper.PrintArray(sol.TwoSum(nums, target));
+        PrintHelper.PrintEnumerable(sol.TwoSum(nums, target));
         // Output: [1,2]
         
         nums = [3,3];
         target = 6;
         
-        PrintHelper.PrintArray(sol.TwoSum(nums, target));
+        PrintHelper.PrintEnumerable(sol.TwoSum(nums, target));
         // Output: [0,1]
     }
 }

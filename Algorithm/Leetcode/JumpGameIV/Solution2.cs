@@ -137,9 +137,9 @@ public class Solution2
         while (queueFromStart.Count > 0)
         {
             var compare = queueFromStart.Count > queueFromEnd.Count;
-            bool[] visited = null!;
-            bool[] otherVisited = null!;
-            Queue<int> queue = null!;
+            bool[] visited;
+            bool[] otherVisited;
+            Queue<int> queue;
 
             if (compare)
             {

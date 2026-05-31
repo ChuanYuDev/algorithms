@@ -2,10 +2,10 @@
 
 public static class PrintHelper
 {
-    public static void PrintArray<T>(T[] array)
+    public static void PrintEnumerable<T>(IEnumerable<T> enumerable)
     {
-        Console.WriteLine("Array:");
-        foreach (var element in array)
+        Console.WriteLine("Enumerable:");
+        foreach (var element in enumerable)
         {
             Console.Write(element);
             Console.Write(" ");
