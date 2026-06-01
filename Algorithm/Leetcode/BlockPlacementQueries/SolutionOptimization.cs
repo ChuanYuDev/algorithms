@@ -51,7 +51,7 @@ namespace Leetcode.BlockPlacementQueries;
 
 //  Unbelievable beats 100%
 
-public class Blocks2
+public class BlocksOptimization
 {
     private readonly List<int> _sorted = new List<int>();
     private readonly List<int> _max = new List<int>();
@@ -147,12 +147,12 @@ public class Blocks2
         return Math.Max(_max[idx - 1], x - _sorted[idx - 1]);
     }
 }
-public class Solution2
+public class SolutionOptimization
 {
     public IList<bool> GetResults(int[][] queries)
     {
         List<bool> results = new List<bool>();
-        Blocks2 blocks = new Blocks2();
+        BlocksOptimization blocks = new BlocksOptimization();
 
         foreach (var query in queries)
         {
