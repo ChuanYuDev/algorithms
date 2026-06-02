@@ -132,6 +132,7 @@ public class Blocks
     private readonly List<int> _sorted = new List<int>();
     private readonly List<int> _max = new List<int>();
 
+    // This function can be replaced by List<T>.BinarySearch(T)
     private int FindIdx(int x)
     {
         var length = _sorted.Count;
