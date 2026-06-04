@@ -29,16 +29,19 @@ public class Sort
         int[][] array1 = [[1, 3], [4, 10], [2, 5]];
         Array.Sort(array1, new CustomComparer());
         PrintHelper.PrintJaggedArray(array1);
+        // Output: [1 3] [2 5] [4 10]
         
         int[][] array2 = [[1, 3], [4, 10], [2, 5]];
         Array.Sort(array2, (array, otherArray) =>
             -(array[1] - array[0]).CompareTo(otherArray[1] - otherArray[0])
         );
         PrintHelper.PrintJaggedArray(array2);
+        // Output: [4 10] [2 5] [1 3] 
 
         int[] array3 = [32, 200, 3];
         Array.Sort(array3);
         
         PrintHelper.PrintEnumerable(array3);
+        // Output: 3 32 200
     }
 }
