@@ -114,8 +114,8 @@ namespace Leetcode.TotalWavinessOfNumbersInRangeII;
 
 public class Solution2
 {
-    private bool[] _isWaviness;
-    private long[] _occurrence;
+    private bool[] _isWaviness = null!;
+    private long[] _occurrence = null!;
 
     public Solution2()
     {

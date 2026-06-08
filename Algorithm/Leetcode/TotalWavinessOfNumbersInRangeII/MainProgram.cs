@@ -11,7 +11,7 @@ public class MainProgram
 {
     static void Main()
     {
-        var sol = new Solution2();
+        var sol = new Solution3();
         long num1 = 120, num2 = 130;
         Console.WriteLine(sol.TotalWaviness(num1, num2));
         //  Output: 3
@@ -34,5 +34,6 @@ public class MainProgram
         num1 = 2549294942;
         num2 = 5067104447;
         Console.WriteLine(sol.TotalWaviness(num1, num2));
+        //  Output: 11661365485
     }
 }
