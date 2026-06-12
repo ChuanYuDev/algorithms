@@ -14,6 +14,21 @@ public static class PrintHelper
         Console.WriteLine();
     }
 
+    public static void Print2DList<T>(IList<IList<T>> listOfList)
+    {
+        Console.WriteLine("2D list:");
+        foreach (var list in listOfList)
+        {
+            foreach (var element in list)
+            {
+                Console.Write(element);
+                Console.Write(" ");
+            }
+            
+            Console.WriteLine();
+        }
+    }
+
     public static void PrintJaggedArray<T>(T[][] array)
     {
         Console.WriteLine("Jagged array:");
