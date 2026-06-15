@@ -1,4 +1,4 @@
-namespace Algorithm.SegmentTree;
+namespace Algorithm.DataStructure.SegmentTree;
 
 // Segment tree with sum range, update and query
 public class SegmentTree

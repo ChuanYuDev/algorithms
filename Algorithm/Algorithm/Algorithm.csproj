@@ -5,7 +5,15 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Algorithm.SegmentTree.MainProgram</StartupObject>
+        <StartupObject>Algorithm.DataStructure.SparseTable.MainProgram</StartupObject>
     </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Algorithm\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Helper\Helper.csproj" />
+    </ItemGroup>
 
 </Project>

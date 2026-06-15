@@ -1,4 +1,4 @@
-namespace Algorithm.sort;
+namespace Algorithm.Algorithm.Sort;
 
 public class SelectionSortProgram
 {
