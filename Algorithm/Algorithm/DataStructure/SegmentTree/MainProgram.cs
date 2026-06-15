@@ -76,6 +76,7 @@ public class SegmentTree
         // If the node contains the range then return the node value
         if (queryLeft <= left && right <= queryRight) return _segmentTree[nodeIdx];
 
+        // ex. left, queryLeft, right, queryRight
         int mid = (left + right) >> 1;
 
         // Recursively traverse left and right and find the node

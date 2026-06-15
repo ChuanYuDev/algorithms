@@ -1,4 +1,8 @@
 namespace Leetcode.MaximumTotalSubarrayValueII;
+
+//  Runtime Error 305 / 930 testcases passed
+//  Out of memory.
+
 //  Input: nums = [1,3,2], k = 2
 //  l r max min value
 //  0 0   1   1     0
@@ -19,9 +23,6 @@ namespace Leetcode.MaximumTotalSubarrayValueII;
 //
 //  Time complexity: O(n^2logn) 
 //  Space complexity: O(n^2)
-
-//  Runtime Error 305 / 930 testcases passed
-//  Out of memory.
 
 public class Solution
 {

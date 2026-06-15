@@ -28,7 +28,7 @@ public class MainProgram
 {
     static void Main()
     {
-        var sol = new Solution2();
+        var sol = new Solution3();
         int[] nums = [1, 3, 2];
         int k = 2;
         Console.WriteLine(sol.MaxTotalValue(nums, k));
@@ -43,5 +43,10 @@ public class MainProgram
         k = 3;
         Console.WriteLine(sol.MaxTotalValue(nums, k));
         //  Output: 3
+
+        nums = [28, 21, 50, 32];
+        k = 10;
+        Console.WriteLine(sol.MaxTotalValue(nums, k));
+        //  Output: 141
     }
 }

@@ -1,5 +1,7 @@
 namespace Leetcode.MaximumTotalSubarrayValueII;
 
+//  Time Limit Exceeded 304 / 930 testcases passed
+
 //  We don't need to store all the values, we only need to store the value as the key, its occurrence and sort them based on the value
 
 //  Input: nums = [1,3,2], k = 2
@@ -45,9 +47,7 @@ namespace Leetcode.MaximumTotalSubarrayValueII;
 //  Time complexity: O(n^2logn) 
 //  Space complexity: O(max - min)
 
-//  Time Limit Exceeded 304 / 930 testcases passed
-
-public class CustomComparer : IComparer<int>
+public class CustomComparer2 : IComparer<int>
 {
     public int Compare(int x, int y)
     {
@@ -59,7 +59,7 @@ public class Solution2
 {
     public long MaxTotalValue(int[] nums, int k)
     {
-        var sd = new SortedDictionary<int, int>(new CustomComparer());
+        var sd = new SortedDictionary<int, int>(new CustomComparer2());
         var length = nums.Length;
 
         for (var l = 0; l <= length - 1; l++)
