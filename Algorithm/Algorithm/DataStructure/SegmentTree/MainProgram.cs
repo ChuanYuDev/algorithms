@@ -80,8 +80,7 @@ public class SegmentTree
         int mid = (left + right) >> 1;
 
         // Recursively traverse left and right and find the node
-        return Query(queryLeft, queryRight, nodeIdx << 1, left, mid)
-               + Query(queryLeft, queryRight, nodeIdx << 1 | 1, mid + 1, right);
+        return Query(queryLeft, queryRight, nodeIdx << 1, left, mid) + Query(queryLeft, queryRight, nodeIdx << 1 | 1, mid + 1, right);
     }
 
     public int Query(int queryLeft, int queryRight)

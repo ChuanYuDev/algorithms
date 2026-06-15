@@ -28,7 +28,7 @@ public class MainProgram
 {
     static void Main()
     {
-        var sol = new Solution3();
+        var sol = new Solution4();
         int[] nums = [1, 3, 2];
         int k = 2;
         Console.WriteLine(sol.MaxTotalValue(nums, k));
