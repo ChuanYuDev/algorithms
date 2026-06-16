@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Test.Types.JaggedArray.Array</StartupObject>
+        <StartupObject>Test.Types.StringBuilderTest.Append</StartupObject>
         <RootNamespace>Test</RootNamespace>
     </PropertyGroup>
 
