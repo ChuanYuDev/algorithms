@@ -5,11 +5,15 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.DeleteTheMiddleNodeOfALinkedList.MainProgram</StartupObject>
+        <StartupObject>Leetcode.MaximumTwinSumOfALinkedList.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Helper\Helper.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="ProcessStringWithSpecialOperationsII\" />
     </ItemGroup>
 
 </Project>
