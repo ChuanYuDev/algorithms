@@ -8,6 +8,7 @@ namespace Leetcode.NumberOfWaysToAssignEdgeWeightsII;
 //  To get lowest common ancestor, we can save the ancestors of nodes in the path
 
 //  int[,] ancs = new int[_nodeNum + 1, _nodeNum+1]
+//  Space complexity: O(n^2)
 
 //  Lowest common ancestor
 //  if (u == v) return u

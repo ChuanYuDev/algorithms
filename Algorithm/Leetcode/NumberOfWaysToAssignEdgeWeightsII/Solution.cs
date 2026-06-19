@@ -48,7 +48,8 @@ namespace Leetcode.NumberOfWaysToAssignEdgeWeightsII;
 //      ancV = parent[ancV]
 //  return ancU
 
-//  Time complexity: O(klogn + n)
+//  Time complexity:
+//      O(klogn + n)
 //  Space complexity: O(n)
 
 public class Tree
