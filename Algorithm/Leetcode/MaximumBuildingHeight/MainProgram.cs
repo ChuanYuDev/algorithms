@@ -40,7 +40,7 @@ public class MainProgram
 {
     static void Main()
     {
-        var sol = new Solution2();
+        var sol = new Solution3();
         int n = 5;
         int[][] restrictions = [[2, 1], [4, 1]];
         Console.WriteLine(sol.MaxBuilding(n, restrictions));
