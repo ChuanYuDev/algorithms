@@ -29,6 +29,12 @@ namespace Leetcode.MaximumIceCreamBars;
 //      1 <= costs[i] <= 10^5
 //      1 <= coins <= 10^8
 
+//  Counting sort
+//  n: number of costs
+//  m: max(costs)
+//  Time complexity: O(n + m)
+//  Space complexity: O(n + m)
+
 public class Solution
 {
     private int[] CoutingSort(int[] nums)
