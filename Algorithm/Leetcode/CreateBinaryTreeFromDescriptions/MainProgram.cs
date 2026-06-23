@@ -90,38 +90,6 @@ public class TreeNode
     }
 }
 
-public class Tree
-{
-    private readonly TreeNode _root;
-
-    public Tree(TreeNode root)
-    {
-        _root = root;
-    }
-
-    public void PrintTree()
-    {
-        var queue = new Queue<TreeNode?>();
-        queue.Enqueue(_root);
-        while (queue.Count > 0)
-        {
-            var node = queue.Dequeue();
-            
-            if (node is null)
-            {
-                Console.Write("null ");
-                continue;
-            }
-            Console.Write($"{node.val} ");
-            
-            queue.Enqueue(node.left);
-            queue.Enqueue(node.right);
-        }
-        
-        Console.WriteLine();
-    }
-}
-
 public class Solution 
 {
     public TreeNode CreateBinaryTree(int[][] descriptions)
@@ -169,6 +137,31 @@ public class Solution
     }
 }
 
+public static class BinaryTreeHelper
+{
+    public static void PrintTree(TreeNode root)
+    {
+        var queue = new Queue<TreeNode?>();
+        queue.Enqueue(root);
+        while (queue.Count > 0)
+        {
+            var node = queue.Dequeue();
+            
+            if (node is null)
+            {
+                Console.Write("null ");
+                continue;
+            }
+            Console.Write($"{node.val} ");
+            
+            queue.Enqueue(node.left);
+            queue.Enqueue(node.right);
+        }
+        
+        Console.WriteLine();
+    }
+}
+
 public class MainProgram
 {
     static void Main()
@@ -176,12 +169,12 @@ public class MainProgram
         var sol = new Solution();
         int[][] descriptions = [[20, 15, 1], [20, 17, 0], [50, 20, 1], [50, 80, 0], [80, 19, 1]];
         var root = sol.CreateBinaryTree(descriptions);
-        (new Tree(root)).PrintTree();
+        BinaryTreeHelper.PrintTree(root);
         //  Output: [50,20,80,15,17,19]
 
         descriptions = [[1, 2, 1], [2, 3, 0], [3, 4, 1]];
         root = sol.CreateBinaryTree(descriptions);
-        (new Tree(root)).PrintTree();
+        BinaryTreeHelper.PrintTree(root);
         //  Output: [1,2,null,null,3,4]
     }
 }
