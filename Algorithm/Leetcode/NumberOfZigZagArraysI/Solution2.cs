@@ -1,6 +1,8 @@
 namespace Leetcode.NumberOfZigZagArraysI;
 
-//  Simplify dfs + dp to dp only
+//  Optimization
+//  1. Simplify dfs + dp to dp only
+//  2. Even int + int may overflow, but (int + int) % Mod will return back to int range
 
 //  Input: n = 3, l = 1, r = 3
 //      [1, 2, 1], [1, 3, 1], [1, 3, 2]
@@ -34,7 +36,7 @@ namespace Leetcode.NumberOfZigZagArraysI;
 //  sumDp0[i, max] = sum(dp[i,x,0]) l <= x < max
 //  dp[i+1, y, 1] = sumDp0[i, y]
 
-//  result = sum(dp[n,y,0]) + sum(dp[n,y,1])
+//  result = sum(dp[n,y,0]) + sum(dp[n,y,1]) = sumDp0[n, r] + sumDp1[n,l]
 //      0: l <= y < r
 //      1: l < y <= r
 

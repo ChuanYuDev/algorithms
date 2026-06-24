@@ -38,7 +38,7 @@ public class MainProgram
 {
     static void Main()
     {
-        var sol = new Solution2();
+        var sol = new Solution5();
         int n = 3, l = 4, r = 5;
         Console.WriteLine(sol.ZigZagArrays(n, l, r));
         //  Output: 2
