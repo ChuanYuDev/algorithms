@@ -35,6 +35,10 @@ namespace Leetcode.TotalWavinessOfNumbersInRangeII;
 //
 //      i, prev1, prev2, isLimit form the dynamic programming
 
+//  Why do we need to record prev2 value instead of recording prev2, prev1 relationship
+//      Because we need to get the count value
+//      The count value affects the waviness
+
 //  Why do we need DP with !isLimit?
 //      num = 5104
 //      010: cnt 10, wav 9
