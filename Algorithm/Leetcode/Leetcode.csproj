@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.NumberOfZigZagArraysI.MainProgram</StartupObject>
+        <StartupObject>Leetcode.NumberOfZigZagArraysII.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>

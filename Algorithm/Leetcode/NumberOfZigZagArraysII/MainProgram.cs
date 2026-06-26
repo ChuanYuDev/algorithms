@@ -39,14 +39,42 @@ namespace Leetcode.NumberOfZigZagArraysII;
 //  Time Limit Exceeded 562 / 574 testcases passed
 //      n = 81482900 l = 31 r = 33
 
-public class Solution {
-    public int ZigZagArrays(int n, int l, int r)
-    {
-        return 0;
-    }
+public class Const
+{
+    public const int Mod = 1_000_000_007;
 }
 
 public class MainProgram
 {
-    
+    static void Main()
+    {
+        var sol = new Solution3();
+        int n = 3, l = 4, r = 5;
+        Console.WriteLine(sol.ZigZagArrays(n, l, r));
+        //  Output: 2
+
+        n = 3;
+        l = 1;
+        r = 3;
+        Console.WriteLine(sol.ZigZagArrays(n, l, r));
+        //  Output: 10
+
+        n = 7;
+        l = 8;
+        r = 45;
+        Console.WriteLine(sol.ZigZagArrays(n, l, r));
+        //  Output: 257729443
+
+        n = 81482900;
+        l = 31;
+        r = 33;
+        Console.WriteLine(sol.ZigZagArrays(n, l, r));
+        //  Output: 551374482
+
+        n = 28;
+        l = 1;
+        r = 4;
+        Console.WriteLine(sol.ZigZagArrays(n, l, r));
+        //  Output: 73074299
+    }
 }

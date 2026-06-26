@@ -60,5 +60,11 @@ public class MainProgram
         r = 45;
         Console.WriteLine(sol.ZigZagArrays(n, l, r));
         //  Output: 257729443
+        
+        n = 28;
+        l = 1;
+        r = 4;
+        Console.WriteLine(sol.ZigZagArrays(n, l, r));
+        //  Output: 73074299
     }
 }

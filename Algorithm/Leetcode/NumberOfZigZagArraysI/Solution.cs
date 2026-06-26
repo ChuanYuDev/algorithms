@@ -1,6 +1,6 @@
 namespace Leetcode.NumberOfZigZagArraysI;
 
-// Time Limit Exceeded 518 / 921 testcases passed
+//  Time Limit Exceeded 518 / 921 testcases passed
 
 //  dp + dfs
 
