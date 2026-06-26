@@ -15,6 +15,9 @@ namespace Leetcode.NumberOfZigZagArraysII;
 //      But we can save the conversion from long to int
 //      Runtime 341 ms, Beats 43.57%
 
+//  Editorial: Runtime 266 ms, Beats 77.14%
+//      Any optimizations?? one-dimensional array??
+
 public class Const3
 {
     public const long Mod = 1_000_000_007;
