@@ -6,6 +6,11 @@ namespace Leetcode.NumberOfZigZagArraysII;
 //  Use $dp$ ($2d \times 1$) instead of identity matrix as accumulator
 //      Refer to leetcode note
 
+public class Const2
+{
+    public const int Mod = 1_000_000_007;
+}
+
 public static class Matrix2
 {
     
@@ -26,7 +31,7 @@ public static class Matrix2
             {
                 for (var k = 0; k <= m - 1; k++)
                 {
-                    c[i, j] = (int)(((long)a[i, k] * b[k, j] + c[i, j]) % Const.Mod);
+                    c[i, j] = (int)(((long)a[i, k] * b[k, j] + c[i, j]) % Const2.Mod);
                 }
             }
         }
@@ -74,7 +79,7 @@ public class Solution2
 
         for (var i = 0; i <= length - 1; i++)
         {
-            result = (result + acc[i, 0]) % Const.Mod;
+            result = (result + acc[i, 0]) % Const2.Mod;
         }
         
         return result;

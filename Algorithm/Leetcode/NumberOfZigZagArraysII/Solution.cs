@@ -44,6 +44,11 @@ namespace Leetcode.NumberOfZigZagArraysII;
 //      Matrix: O(d^2)
 //      Total: O(d^2)
 
+public class Const
+{
+    public const int Mod = 1_000_000_007;
+}
+
 public static class Matrix
 {
     

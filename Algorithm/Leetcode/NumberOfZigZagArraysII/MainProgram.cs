@@ -39,11 +39,6 @@ namespace Leetcode.NumberOfZigZagArraysII;
 //  Time Limit Exceeded 562 / 574 testcases passed
 //      n = 81482900 l = 31 r = 33
 
-public class Const
-{
-    public const int Mod = 1_000_000_007;
-}
-
 public class MainProgram
 {
     static void Main()
