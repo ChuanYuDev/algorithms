@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Algorithm.Algorithm.MatrixExponentiation.MainProgram</StartupObject>
+        <StartupObject>Algorithm.Algorithm.CoordinateCompression.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>

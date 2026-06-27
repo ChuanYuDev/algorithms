@@ -43,15 +43,28 @@ namespace Leetcode.CountSubarraysWithMajorityElementII;
 //  Use Count Subarrays With Majority Element I Solution
 //  Time Limit Exceeded 510 / 516 testcases passed
 
-public class Solution
-{
-    public long CountMajoritySubarrays(int[] nums, int target)
-    {
-        return 0;
-    }
-}
+//  Hint 1: Convert to +1/-1: let arr[i] = 1 if nums[i] == target else -1.
+//  Hint 2: Build prefix sums: pref[0]=0, pref[k] = pref[k - 1] + arr[k - 1] for k=1..n.
+//  Hint 3: Count pairs (i < j) with pref[j] > pref[i] (these correspond to subarrays where target is majority).
 
 public class MainProgram
 {
-    
+    static void Main()
+    {
+        var sol = new Solution();
+        int[] nums = [1, 2, 2, 3];
+        int target = 2;
+        Console.WriteLine(sol.CountMajoritySubarrays(nums, target));
+        //  Output: 5
+
+        nums = [1, 1, 1, 1];
+        target = 1;
+        Console.WriteLine(sol.CountMajoritySubarrays(nums, target));
+        //  Output: 10
+
+        nums = [1, 2, 3];
+        target = 4;
+        Console.WriteLine(sol.CountMajoritySubarrays(nums, target));
+        //  Output: 0
+    }
 }
