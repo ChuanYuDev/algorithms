@@ -1,6 +1,6 @@
 namespace Leetcode.CountSubarraysWithMajorityElementII;
 
-//  Runtime 24 ms, Beats 23.72%
+//  Runtime 25 ms, Beats 16.27%
 
 //  Use coordinate compression with fenwick tree
 
@@ -25,6 +25,9 @@ namespace Leetcode.CountSubarraysWithMajorityElementII;
 //  pref[j] > pref[i], 0 <= i < j <= n-1 <-> pref[j] - pref[i] = arr[i+1 ... j] > 0 <-> [i+1, j]
 
 //  pref[i] [-n, +n] -> + n+1 -> [1, 2n+1]
+
+//  Time complexity: O(nlogn)
+//  Space complexity: O(n)
 
 public class Fenwick
 {
@@ -69,16 +72,16 @@ public class Solution
     public long CountMajoritySubarrays(int[] nums, int target)
     {
         var length = nums.Length;
-        int pref, prevPref = 0;
+        var prevPref = 0;
         long result = 0;
 
         var fenwick = new Fenwick(2 * length + 1);
 
         for (var i = 0; i <= length - 1; i++)
         {
-            int num = (nums[i] == target) ? 1 : -1;
+            var num = (nums[i] == target) ? 1 : -1;
             
-            pref = (i == 0) ? num: prevPref + num;
+            var pref = prevPref + num;
             prevPref = pref;
             if (pref > 0) result++;
 

@@ -54,7 +54,7 @@ public class MainProgram
 {
     static void Main()
     {
-        var sol = new Solution();
+        var sol = new Solution2();
         int[] nums = [1, 2, 2, 3];
         int target = 2;
         Console.WriteLine(sol.CountMajoritySubarrays(nums, target));
