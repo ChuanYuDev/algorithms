@@ -47,6 +47,9 @@ namespace Leetcode.CountSubarraysWithMajorityElementII;
 //  Hint 2: Build prefix sums: pref[0]=0, pref[k] = pref[k - 1] + arr[k - 1] for k=1..n.
 //  Hint 3: Count pairs (i < j) with pref[j] > pref[i] (these correspond to subarrays where target is majority).
 
+//  maxN: 10^5
+//  max substring number: (n+1)n/2 = 5 * 10^9 > int
+
 public class MainProgram
 {
     static void Main()
