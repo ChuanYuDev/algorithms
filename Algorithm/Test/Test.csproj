@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Test.Types.StringBuilderTest.Append</StartupObject>
+        <StartupObject>Test.Classes.JsonSerializerClass.MainProgram</StartupObject>
         <RootNamespace>Test</RootNamespace>
     </PropertyGroup>
 

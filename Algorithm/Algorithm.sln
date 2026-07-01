@@ -8,6 +8,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csproj", "{57887D24-B997-44BF-8EF2-0ACFDCBBB03C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ", "RabbitMQ", "{F2A402D8-7FB5-45A5-B2E1-D7E785A4C6FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "Producer\Producer.csproj", "{2B9585E7-C128-42F3-A0D1-0F62715A71BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{EF488062-5400-439F-97A3-E47DBD519496}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +36,17 @@ Global
 		{57887D24-B997-44BF-8EF2-0ACFDCBBB03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57887D24-B997-44BF-8EF2-0ACFDCBBB03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57887D24-B997-44BF-8EF2-0ACFDCBBB03C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B9585E7-C128-42F3-A0D1-0F62715A71BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B9585E7-C128-42F3-A0D1-0F62715A71BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B9585E7-C128-42F3-A0D1-0F62715A71BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B9585E7-C128-42F3-A0D1-0F62715A71BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF488062-5400-439F-97A3-E47DBD519496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF488062-5400-439F-97A3-E47DBD519496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF488062-5400-439F-97A3-E47DBD519496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF488062-5400-439F-97A3-E47DBD519496}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B9585E7-C128-42F3-A0D1-0F62715A71BD} = {F2A402D8-7FB5-45A5-B2E1-D7E785A4C6FD}
+		{EF488062-5400-439F-97A3-E47DBD519496} = {F2A402D8-7FB5-45A5-B2E1-D7E785A4C6FD}
 	EndGlobalSection
 EndGlobal
