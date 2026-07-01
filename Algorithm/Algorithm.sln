@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "Producer\Produc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{EF488062-5400-439F-97A3-E47DBD519496}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoogleAPI", "GoogleAPI", "{E38F6661-063A-46C3-ACD4-3E16E4F3625A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleSheets", "GoogleSheets\GoogleSheets.csproj", "{1046A501-0691-4F3C-8920-532F5E00D83F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,9 +48,14 @@ Global
 		{EF488062-5400-439F-97A3-E47DBD519496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF488062-5400-439F-97A3-E47DBD519496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF488062-5400-439F-97A3-E47DBD519496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1046A501-0691-4F3C-8920-532F5E00D83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1046A501-0691-4F3C-8920-532F5E00D83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1046A501-0691-4F3C-8920-532F5E00D83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1046A501-0691-4F3C-8920-532F5E00D83F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2B9585E7-C128-42F3-A0D1-0F62715A71BD} = {F2A402D8-7FB5-45A5-B2E1-D7E785A4C6FD}
 		{EF488062-5400-439F-97A3-E47DBD519496} = {F2A402D8-7FB5-45A5-B2E1-D7E785A4C6FD}
+		{1046A501-0691-4F3C-8920-532F5E00D83F} = {E38F6661-063A-46C3-ACD4-3E16E4F3625A}
 	EndGlobalSection
 EndGlobal
