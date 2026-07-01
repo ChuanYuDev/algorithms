@@ -7,7 +7,8 @@ namespace GoogleSheets;
 class Program
 {
     private static readonly string[] Scopes = [SheetsService.Scope.SpreadsheetsReadonly];
-    private const string SpreadsheetId = "1XRg8HTGuqgF-q_jHUtz311rC8te6miV1XogxAvjVKmA";
+    private const string ClientSpreadsheetId = "1XRg8HTGuqgF-q_jHUtz311rC8te6miV1XogxAvjVKmA";
+    private const string VolunteerSpreadsheetId = "1Xv3kyox5skadQk198sQMq4YFjr3wDphUn-t0qbB0TYQ";
     private const string GoogleCredentialsFileName = "google_credentials.json";
     private const string ReadRange = "Form Responses 1";
 
@@ -34,7 +35,7 @@ class Program
 
     private static async Task ReadAsync(SpreadsheetsResource.ValuesResource valuesResource)
     {
-        var response = await valuesResource.Get(SpreadsheetId, ReadRange).ExecuteAsync();
+        var response = await valuesResource.Get(VolunteerSpreadsheetId, ReadRange).ExecuteAsync();
         var values = response.Values;
         if (values == null || !values.Any())
         {
