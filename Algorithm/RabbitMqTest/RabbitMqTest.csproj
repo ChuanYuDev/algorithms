@@ -5,11 +5,10 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>GoogleSheetsApi</RootNamespace>
+        <StartupObject>RabbitMqTest.Producer.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Google.Apis.Sheets.v4" Version="1.75.0.4178" />
+        <PackageReference Include="RabbitMQ.Client" Version="7.2.1" />
     </ItemGroup>
-
 </Project>

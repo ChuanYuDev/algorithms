@@ -2,23 +2,17 @@
 using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
 
-namespace GoogleSheets;
+namespace GoogleApiTest.GoogleSheetsApi;
 
-class Program
+public class GoogleSheetsApi
 {
     private static readonly string[] Scopes = [SheetsService.Scope.SpreadsheetsReadonly];
-    private const string ClientSpreadsheetId = "1XRg8HTGuqgF-q_jHUtz311rC8te6miV1XogxAvjVKmA";
-    private const string VolunteerSpreadsheetId = "1Xv3kyox5skadQk198sQMq4YFjr3wDphUn-t0qbB0TYQ";
     private const string GoogleCredentialsFileName = "google_credentials.json";
     private const string ReadRange = "Form Responses 1";
 
-    static async Task Main(string[] args)
-    {
-        var serviceValues = GetSheetsService().Spreadsheets.Values;
-        await ReadAsync(serviceValues);
-    }
+    private readonly SheetsService _sheetsService;
 
-    private static SheetsService GetSheetsService()
+    public GoogleSheetsApi()
     {
         using var stream = new FileStream(GoogleCredentialsFileName, FileMode.Open, FileAccess.Read);
         
@@ -30,12 +24,12 @@ class Program
             HttpClientInitializer = googleCredential
         };
 
-        return new SheetsService(serviceInitializer);
+        _sheetsService = new SheetsService(serviceInitializer);
     }
-
-    private static async Task ReadAsync(SpreadsheetsResource.ValuesResource valuesResource)
+    
+    public async Task ReadAsync(string spreadsheetId)
     {
-        var response = await valuesResource.Get(VolunteerSpreadsheetId, ReadRange).ExecuteAsync();
+        var response = await _sheetsService.Spreadsheets.Values.Get(spreadsheetId, ReadRange).ExecuteAsync();
         var values = response.Values;
         if (values == null || !values.Any())
         {
@@ -50,5 +44,18 @@ class Program
             var res = string.Join("|", row.Select(r => r.ToString()));
             Console.WriteLine(res);
         }
+    }
+}
+
+class MainProgram
+{
+    static async Task Main(string[] args)
+    {
+        var googleSheetsApi = new GoogleSheetsApi();
+        const string clientSpreadsheetId = "1XRg8HTGuqgF-q_jHUtz311rC8te6miV1XogxAvjVKmA";
+        await googleSheetsApi.ReadAsync(clientSpreadsheetId);
+        
+        const string volunteerSpreadsheetId = "1Xv3kyox5skadQk198sQMq4YFjr3wDphUn-t0qbB0TYQ";
+        await googleSheetsApi.ReadAsync(volunteerSpreadsheetId);
     }
 }

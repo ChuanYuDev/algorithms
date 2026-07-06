@@ -5,11 +5,6 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>GoogleSheetsApi</RootNamespace>
     </PropertyGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Google.Apis.Sheets.v4" Version="1.75.0.4178" />
-    </ItemGroup>
 
 </Project>
