@@ -1,13 +1,12 @@
-﻿using StackExchange.Redis;
+using StackExchange.Redis;
 
-namespace RedisTest;
+namespace RedisWebApiTest;
 
-class Program
+public class RedisBackgroundJob(IConnectionMultiplexer connectionMultiplexer): BackgroundService
 {
-    static async Task Main(string[] args)
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        var muxer = ConnectionMultiplexer.Connect("localhost:6379");
-        var db = muxer.GetDatabase();
+        var db = connectionMultiplexer.GetDatabase();
 
         var isSet = db.StringSet("foo", "bar");
         Console.WriteLine(isSet);
@@ -26,5 +25,6 @@ class Program
         
         value = db.StringGet("foo3");
         Console.WriteLine(value);
+
     }
 }
