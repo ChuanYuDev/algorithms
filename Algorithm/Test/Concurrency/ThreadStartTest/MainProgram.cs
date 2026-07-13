@@ -1,6 +1,6 @@
 namespace Test.Concurrency.ThreadStartTest;
 
-class ThreadStartTest
+class MainProgram
 {
     static void Main() 
     {

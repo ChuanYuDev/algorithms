@@ -3,7 +3,7 @@ namespace Test.Concurrency.Semaphore;
 using System;
 using System.Threading;
 
-public class Example
+public class MainProgram
 {
     // A semaphore that simulates a limited resource pool.
     //

@@ -1,6 +1,6 @@
-namespace Test.Math;
+namespace Test.MathTest;
 
-public class Math
+public class MainProgram
 {
     static void Main()
     {

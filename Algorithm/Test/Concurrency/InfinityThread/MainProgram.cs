@@ -1,6 +1,6 @@
 namespace Test.Concurrency.InfinityThread;
 
-public class InfinityThread
+public class MainProgram
 {
     static void Main()
     {
