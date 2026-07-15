@@ -67,6 +67,8 @@ namespace Leetcode.LongestPalindromicSubstring;
 //  Space complexity: O(1)
 //      We don't count the answer as part of the space complexity
 
+//  Manacher's algorithm can solve this problem in $O(n)$ time and space, refer to algorithm/manacher_algorithm
+
 public class Solution
 {
     public string LongestPalindrome(string s)
@@ -126,5 +128,13 @@ public class MainProgram
         s = "cbbd";
         Console.WriteLine(sol.LongestPalindrome(s));
         //  Output: "bb"
+        
+        s = "nbnanbs";
+        Console.WriteLine(sol.LongestPalindrome(s));
+        //  Output: "bnanb"
+        
+        s = "nbnnb";
+        Console.WriteLine(sol.LongestPalindrome(s));
+        //  Output: "bnnb"
     }
 }

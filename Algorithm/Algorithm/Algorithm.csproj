@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Algorithm.Algorithm.CoordinateCompression.MainProgram</StartupObject>
+        <StartupObject>Algorithm.Algorithm.ManacherAlgorithm.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
