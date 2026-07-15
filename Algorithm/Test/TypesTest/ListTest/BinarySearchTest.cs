@@ -1,6 +1,6 @@
-namespace Test.Types.List;
+namespace Test.TypesTest.ListTest;
 
-public class BinarySearch
+public class BinarySearchTest
 {
     static void Main()
     {

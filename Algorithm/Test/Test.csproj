@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Test.Operators.AwaitTest</StartupObject>
+        <StartupObject>Test.TypesTest.SortedSetTest.KeyValuePairAsElementTest</StartupObject>
         <RootNamespace>Test</RootNamespace>
     </PropertyGroup>
 

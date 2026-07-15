@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace Test.Classes.JsonSerializerClass;
+namespace Test.Types.JsonSerializerTest;
 
 public class Person
 {
@@ -13,7 +13,7 @@ public class Person
     }
 }
 
-public class MainProgram
+public class ObjectSerializeTest
 {
     static void Main()
     {
