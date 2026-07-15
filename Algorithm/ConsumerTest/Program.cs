@@ -2,7 +2,7 @@
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace Consumer;
+namespace ConsumerTest;
 
 class Program
 {

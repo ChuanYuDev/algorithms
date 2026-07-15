@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using RabbitMQ.Client;
 
-namespace Producer;
+namespace ProducerTest;
 
 class Program
 {

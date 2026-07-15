@@ -10,9 +10,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMqTest", "RabbitMqTest", "{F2A402D8-7FB5-45A5-B2E1-D7E785A4C6FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "Producer\Producer.csproj", "{2B9585E7-C128-42F3-A0D1-0F62715A71BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerTest", "ProducerTest\ProducerTest.csproj", "{2B9585E7-C128-42F3-A0D1-0F62715A71BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{EF488062-5400-439F-97A3-E47DBD519496}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerTest", "ConsumerTest\ConsumerTest.csproj", "{EF488062-5400-439F-97A3-E47DBD519496}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D81E1290-91F0-4822-9E4D-C32178428E5F}"
 EndProject
