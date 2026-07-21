@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.SortedGCDPairQueries.MainProgram</StartupObject>
+        <StartupObject>Leetcode.MaximizeActiveSectionWithTradeI.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
