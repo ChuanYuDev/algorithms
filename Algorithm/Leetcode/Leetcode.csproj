@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.MaximizeActiveSectionWithTradeI.MainProgram</StartupObject>
+        <StartupObject>Leetcode.SmallestSubsequenceOfDistinctCharacters.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>

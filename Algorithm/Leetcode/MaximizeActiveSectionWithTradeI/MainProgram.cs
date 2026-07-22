@@ -111,12 +111,12 @@ public class Solution
                 continue;
             }
 
-            if (!startCnt0)
+            if (startCnt0) cnt0++;
+            else 
             {
                 startCnt0 = true;
                 cnt0 = 1;
             }
-            else cnt0++;
         }
 
         return cnt1 + maxCnt0 - 1;
