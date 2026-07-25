@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.RemoveCoveredIntervals.MainProgram</StartupObject>
+        <StartupObject>Leetcode.NQueens.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
