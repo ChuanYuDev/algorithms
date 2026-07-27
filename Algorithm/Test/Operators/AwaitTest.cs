@@ -7,5 +7,6 @@ public class AwaitTest
         // var result = await Math.Max(1, 2);
         var result = Math.Max(1, 2);
         Console.WriteLine(result);
+        await Task.CompletedTask;
     }
 }
