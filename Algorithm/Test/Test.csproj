@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Test.TypesTest.TupleTest.ArrayOfTupleTest</StartupObject>
+        <StartupObject>Test.MathTest.ModTest</StartupObject>
         <RootNamespace>Test</RootNamespace>
     </PropertyGroup>
 
