@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.NumberOfPathsWithMaxScore.MainProgram</StartupObject>
+        <StartupObject>Leetcode.NQueensII.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>

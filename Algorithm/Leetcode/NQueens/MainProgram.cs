@@ -36,6 +36,11 @@ Q...
 
 */
 
+/* Complexity
+Time complexity: O(n!)
+Space complexity: O(n)
+*/
+
 public class NQueens
 {
     private readonly int _n;
