@@ -21,7 +21,7 @@ public class CustomComparer : IComparer<int[]>
     }
 }
 
-public class Sort
+public class SortTest
 {
     
     public static void Main()

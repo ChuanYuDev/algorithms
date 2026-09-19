@@ -1,11 +1,11 @@
 using System.Text.Json;
 
-namespace Test.Types.JsonSerializerTest;
+namespace Test.TypesTest.JsonSerializerTest;
 
 public class Person
 {
-    public required string FirstName { get; set; }
-    public required string LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
 
     public override string ToString()
     {

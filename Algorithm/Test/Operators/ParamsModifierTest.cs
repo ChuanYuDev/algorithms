@@ -1,6 +1,6 @@
 namespace Test.Operators;
 
-public class ParamsModifier
+public class ParamsModifierTest
 {
     public static void ParamsModifierExample(params int[] list)
     {

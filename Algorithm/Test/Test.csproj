@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Test.MathTest.ModTest</StartupObject>
+        <StartupObject>Test.Operators.ImplicitOperatorTest</StartupObject>
         <RootNamespace>Test</RootNamespace>
     </PropertyGroup>
 
