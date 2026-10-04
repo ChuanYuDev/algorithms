@@ -5,7 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <StartupObject>Leetcode.LongestValidParentheses.MainProgram</StartupObject>
+        <StartupObject>Leetcode.MaximumNestingDepthOfTheParentheses.MainProgram</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
