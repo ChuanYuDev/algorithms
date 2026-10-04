@@ -38,19 +38,20 @@ public class Result
 
 public class Result<T> : Result
 {
-    public T? Value { get; }
+    private readonly T? _value;
+    public T Value => IsSuccess ? _value! : throw new InvalidOperationException("Cannot access the value of a failed result");
 
     private Result(T value)
     {
-        Value = value;
+        _value = value;
     }
     
-    private Result(Error error) : base(error) { }
-    
+    private Result(Error error): base(error) {}
+
     public static implicit operator Result<T>(T value) => new(value);
     public static implicit operator Result<T>(Error error) => new(error);
     
-    public override string ToString() => $"{IsSuccess}, {Value}, {Error?.Description}";
+    public override string ToString() => $"{IsSuccess}, {_value}, {Error?.Description}";
 }
 
 public class ImplicitOperatorTest
@@ -68,5 +69,6 @@ public class ImplicitOperatorTest
         
         Result<int> resultOfInt2 = Errors.DictionaryNotFound;
         Console.WriteLine(resultOfInt2);
+        Console.WriteLine(resultOfInt2.Value);
     }
 }
