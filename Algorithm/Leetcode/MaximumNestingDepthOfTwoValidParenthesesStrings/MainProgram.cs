@@ -1,3 +1,5 @@
+using Helper;
+
 namespace Leetcode.MaximumNestingDepthOfTwoValidParenthesesStrings;
 /*
 Maximum Nesting Depth of Two Valid Parentheses Strings
@@ -41,15 +43,22 @@ Constraints:
    1 <= seq.size <= 10000
 */
 
-public class Solution
-{
-   public int[] MaxDepthAfterSplit(string seq)
-   {
-      return [];
-   }
-}
-
 public class MainProgram
 {
-    
+   static void Main()
+   {
+      var sol = new Solution();
+
+      var seq = "(()())";
+      PrintHelper.PrintEnumerable(sol.MaxDepthAfterSplit(seq));
+      // Output: [0,1,1,1,1,0]
+
+      seq = "()(())()";
+      PrintHelper.PrintEnumerable(sol.MaxDepthAfterSplit(seq));
+      // Output: [0,0,0,1,1,0,1,1]
+
+      seq = "(((()))((())))";
+      PrintHelper.PrintEnumerable(sol.MaxDepthAfterSplit(seq));
+      // Output: [0,0,1,1,0,0,1,0,0,1,0,0,1,1]
+   }
 }
